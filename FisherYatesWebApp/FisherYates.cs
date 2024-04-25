@@ -23,7 +23,19 @@ namespace FisherYatesWebApp
         [HttpGet]
         public ActionResult Index([FromQuery] string input)
         {
-            throw new NotImplementedException();
+            var validInput = _shuffler.Validate(input);
+
+            if (validInput)
+            {
+                var output = _shuffler.Shuffle(input);
+                var response = new OkObjectResult(_shuffler.ConvertBackToString(output));
+                response.ContentTypes.Add("text/plain; charset=utf-8");
+                return response;
+            }
+
+            var modelState = new ModelStateDictionary();
+            modelState.AddModelError("Input", "input is not valid.");
+            return new BadRequestObjectResult(modelState);
         }
 
     }

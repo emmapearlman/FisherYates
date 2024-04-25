@@ -45,3 +45,6 @@
 - verify tests pass
 - add tests for edge cases & refactor service if necessary
 - refactor controller if needed
+
+### 24/5/2024
+ - basic controller implemented, controller tests now pass
