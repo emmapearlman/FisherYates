@@ -11,8 +11,9 @@ namespace FisherYatesWebApp
 
         public FisherYates(IShufflerService shuffler)
         {
-                _shuffler =shuffler;
+            _shuffler = shuffler;
         }
+
 
         /// <summary>
         /// todo: Add the skeleton structure for the solution, and implement unit tests (in the FisherYatesTests project)!
