@@ -29,7 +29,7 @@ namespace FisherYates.Algorithm.Tests
 
 
         [TestCase("A-1-C-3")]
-        [TestCase("F-G-!-Z-k-1-W-9")]
+        [TestCase("F-G-!-Z-k-1-W-9-*")]
         public void ValidateReturnsFalseWithInvalidInput(string inputValue)
         {
             //arrange

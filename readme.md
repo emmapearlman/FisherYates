@@ -1,6 +1,7 @@
 # Fisher Yates readme
 
 - based on info found in wikipedia and https://www.geeksforgeeks.org/shuffle-a-given-array-using-fisher-yates-shuffle-algorithm/
+- assumption is that input is a string in the format "A-B-C-D"
 
 ## Controller
 - used dependency injection to add the algorithm service
@@ -46,5 +47,9 @@
 - add tests for edge cases & refactor service if necessary
 - refactor controller if needed
 
-### 24/5/2024
+### 24/4/2024
  - basic controller implemented, controller tests now pass
+
+### 28/04/2024
+- logging added
+- validation added, validation tests pass
